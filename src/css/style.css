@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(../images/bg-repeat.jpg) repeat-x;
+    background-size: contain;
+}
+
+.text-container {
+    color: #fff;
+    width: 30rem;
+    margin: 0 6rem;
+}
+
+.text-container .title {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.text-container .text {
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.form-card {
+    width: 34rem;
+    height: 37.8rem;
+    background: #fff;
+}
+
+.form {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    margin: 2.2rem;
+}
+
+.form .input {
+    height: 3.5rem;
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: 0.1rem solid #000;
+    font-weight: 400;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.form .input::placeholder {
+    font-weight: 700;
+    color: #A8A8A8;
+}
+
+.form .input.message {
+    height: 10rem;
+    max-width: 100%;
+    resize: none;
+}
+
+.form .warning-text {
+    font-size: 1.5rem;
+    margin-top: -0.7rem;
+}
+
+.form .submit-btn {
+    cursor: pointer;
+    height: 4.1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #3CCC87;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.form .unfilled-input {
+    border: 1px solid #F52E2E;
+}
+
+.form .input-filled {
+    border: 1px solid #00C22B;
+}
+
+.required-field {
+    color: #F52E2E;
+    font-size: 0.8rem;
+    line-height: 1%;
+    visibility: hidden;
+}
+
+.error {
+    visibility: visible;
+}
