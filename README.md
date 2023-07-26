@@ -1,6 +1,6 @@
 # Formulário com validação 
 
-![](./design/desktop-design.jpg)
+![](./design/desktop-design.gif)
 
 ## ✨ Sobre o projeto
 
