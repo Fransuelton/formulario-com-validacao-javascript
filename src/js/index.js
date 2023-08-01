@@ -1,36 +1,17 @@
+const formFields = document.querySelectorAll(".input")
 const submitButton = document.querySelector(".submit-btn")
-const inputs = document.querySelectorAll(".input")
-const requiredFileArea = document.getElementsByClassName("required-field")
 
-inputs.forEach((input, index) => {
-    input.addEventListener("input", () => {
-        handleInputChange(input, index);
-    });
-});
+submitButton.addEventListener('click', (event) => {
+    event.preventDefault()
 
-submitButton.addEventListener("click", () => {
-    validateFormAndSubmit();
-});
-
-function handleInputChange(input, index) {
-    if (input.value !== "") {
-        input.classList.add("input-filled");
-        requiredFileArea[index].classList.remove("error");
-    } else {
-        input.classList.remove("input-filled");
-
-    }
-}
-
-function validateFormAndSubmit() {
-    inputs.forEach((input, index) => {
-        if (input.value === "") {
-            event.preventDefault();
-            input.classList.add("unfilled-input");
-            requiredFileArea[index].classList.add("error");
+    formFields.forEach((input) => {
+        if (input.value) {
+            input.classList.add('filled')
+            input.nextElementSibling.classList.remove('error')
         } else {
-            input.classList.remove("unfilled-input");
-            requiredFileArea[index].classList.remove("error");
+            input.classList.remove('filled')
+            input.classList.add('not-filled')
+            input.nextElementSibling.classList.add('error')
         }
     });
-}
+})

@@ -78,11 +78,11 @@
     color: #fff;
 }
 
-.form .unfilled-input {
+.form .not-filled {
     border: 1px solid #F52E2E;
 }
 
-.form .input-filled {
+.form .filled {
     border: 1px solid #00C22B;
 }
 
